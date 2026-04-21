@@ -7,7 +7,7 @@
 | **Category** | Threat Hunting / Lateral Movement Analysis |
 | **Tools Used** | Elastic SIEM, Kibana |
 | **MITRE ATT&CK** | T1566.001, T1059.001, T1053.005, T1548.002, T1003.001, T1550.002, T1021.002, T1482 |
-| **Difficulty** | Hard |
+| **Difficulty** | Medium |
 
 ---
 

@@ -7,7 +7,7 @@
 | **Category** | Incident Response / Attack Chain Analysis |
 | **Tools Used** | EvtxEcmd, Timeline Explorer, Brim, VirusTotal, CyberChef |
 | **MITRE ATT&CK** | T1566.001, T1203, T1059.001, T1105, T1071.001, T1572, T1548.002, T1136.001, T1543.003 |
-| **Difficulty** | Hard |
+| **Difficulty** | Medium |
 
 ---
 
