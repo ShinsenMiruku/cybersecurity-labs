@@ -30,7 +30,8 @@ malware analysis, and GRC work.
 ### Threat Hunting
 | # | Name | Tools | Difficulty |
 |---|---|---|---|
-| 01 | [Tempest](./Threat-Hunting/TEMPEST/writeup.md) | EvtxEcmd, Timeline Explorer, Brim, VirusTotal, CyberChef | Hard |
+| 01 | [Tempest](./Threat-Hunting/TEMPEST/writeup.md) | EvtxEcmd, Timeline Explorer, Brim, VirusTotal, CyberChef | Medium |
+| 02 | [Boogeyman 3](./Threat-Hunting/Boogeyman-3/writeup.md) | Elastic SIEM, Kibana | Medium |
 
 ---
 
