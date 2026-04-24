@@ -4,7 +4,7 @@ Blue team-focused portfolio documenting SOC investigations, threat hunting,
 malware analysis, and GRC work.
  
 **Target Role:** Junior SOC Analyst  
-**Platform:** [TryHackMe](https://tryhackme.com) | SAL1 In Progress
+**Platform:** [TryHackMe](https://tryhackme.com) | [Hack The Box](https://hackthebox.com)
 
 ---
 
@@ -32,6 +32,11 @@ malware analysis, and GRC work.
 |---|---|---|---|
 | 01 | [Tempest](./Threat-Hunting/TEMPEST/writeup.md) | EvtxEcmd, Timeline Explorer, Brim, VirusTotal, CyberChef | Medium |
 | 02 | [Boogeyman 3](./Threat-Hunting/Boogeyman-3/writeup.md) | Elastic SIEM, Kibana | Medium |
+
+### Cloud Security
+| # | Name | Platform | Tools | Difficulty |
+|---|---|---|---|---|
+| 01 | [Vantage](./Cloud-Security/Vantage/writeup.md) | Hack The Box | Wireshark | Very Easy |
 
 ---
 
