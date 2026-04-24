@@ -4,7 +4,7 @@
 | Field | Details |
 |---|---|
 | **Platform** | Hack The Box |
-| **Category** | Cloud Security / Network Forensics |
+| **Category** | Network Forensics |
 | **Tools Used** | Wireshark |
 | **MITRE ATT&CK** | T1595.001, T1110.001, T1530, T1136.003 |
 | **Difficulty** | Very Easy |
