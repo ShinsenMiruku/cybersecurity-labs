@@ -37,7 +37,7 @@ malware analysis, and GRC work.
 
 ### Malware Analysis
 | # | Name | Tools | Difficulty |
-|---|---|---|---|---|
+|---|---|---|---|
 | 01 | [Masquerade](./Malware-Analysis/Masquerade/writeup.md) | Wireshark, Event Viewer, CyberChef, sha256sum | Medium |
 
 ---
