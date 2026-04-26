@@ -36,7 +36,7 @@ malware analysis, and GRC work.
 | 02 | [Boogeyman 3](./Threat-Hunting/Boogeyman-3/writeup.md) | Elastic SIEM, Kibana | Medium |
 
 ### Malware Analysis
-| # | Name | Platform | Tools | Difficulty |
+| # | Name | Tools | Difficulty |
 |---|---|---|---|---|
 | 01 | [Masquerade](./Malware-Analysis/Masquerade/writeup.md) | Wireshark, Event Viewer, CyberChef, sha256sum | Medium |
 
