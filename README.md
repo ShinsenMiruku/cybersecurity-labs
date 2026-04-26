@@ -13,7 +13,8 @@ malware analysis, and GRC work.
 | Category | Writeups | Description |
 |---|---|---|
 | [SOC Investigations](./SOC-Investigations/) | 5 | Log analysis, incident triage, alert investigation |
-| [Threat Hunting](./Threat-Hunting/) | 1 | Attack chain analysis, Sysmon, MITRE ATT&CK mapping |
+| [Threat Hunting](./Threat-Hunting/) | 2 | Attack chain analysis, Sysmon, MITRE ATT&CK mapping |
+| [Malware Analysis](./Malware-Analysis/) | 1 | Static analysis, C2 traffic decryption, payload analysis |
 
 ---
 
@@ -33,6 +34,11 @@ malware analysis, and GRC work.
 |---|---|---|---|
 | 01 | [Tempest](./Threat-Hunting/TEMPEST/writeup.md) | EvtxEcmd, Timeline Explorer, Brim, VirusTotal, CyberChef | Medium |
 | 02 | [Boogeyman 3](./Threat-Hunting/Boogeyman-3/writeup.md) | Elastic SIEM, Kibana | Medium |
+
+### Malware Analysis
+| # | Name | Platform | Tools | Difficulty |
+|---|---|---|---|---|
+| 01 | [Masquerade](./Malware-Analysis/Masquerade/writeup.md) | Wireshark, Event Viewer, CyberChef, sha256sum | Medium |
 
 ---
 
