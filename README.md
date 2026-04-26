@@ -38,7 +38,7 @@ malware analysis, and GRC work.
 ### Malware Analysis
 | # | Name | Tools | Difficulty |
 |---|---|---|---|
-| 01 | [Masquerade](./Malware-Analysis/Masquerade/writeup.md) | Wireshark, Event Viewer, CyberChef, sha256sum | Medium |
+| 01 | [Masquerade](./Malware-Analysis/Masquerade/writeup.md) | Wireshark, Event Viewer, CyberChef, sha256sum, ILSpy | Medium |
 
 ---
 
@@ -46,6 +46,7 @@ malware analysis, and GRC work.
 `Splunk` `Elastic SIEM` `Kibana` `Sysmon` `Wireshark` `tshark`
 `EvtxEcmd` `Timeline Explorer` `Brim` `VirusTotal` `CyberChef`
 `Volatility` `olevba` `lnkparse` `MITRE ATT&CK Navigator` `pestudio`
+`IlSpy`
 
 ---
 
