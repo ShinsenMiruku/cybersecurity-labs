@@ -13,8 +13,7 @@ malware analysis, and GRC work.
 | Category | Writeups | Description |
 |---|---|---|
 | [SOC Investigations](./SOC-Investigations/) | 5 | Log analysis, incident triage, alert investigation |
-| [Threat Hunting](./Threat-Hunting/) | 2 | Attack chain analysis, Sysmon, MITRE ATT&CK mapping |
-| [Malware Analysis](./Malware-Analysis/) | 1 | Static analysis, C2 traffic decryption, payload analysis |
+| [Threat Hunting](./Threat-Hunting/) | 1 | Attack chain analysis, Sysmon, MITRE ATT&CK mapping |
 
 ---
 
