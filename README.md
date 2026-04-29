@@ -12,7 +12,7 @@ malware analysis, and GRC work.
 
 | Category | Writeups | Description |
 |---|---|---|
-| [SOC Investigations](./SOC-Investigations/) | 5 | Log analysis, incident triage, alert investigation |
+| [SOC Investigations](./SOC-Investigations/) | 6 | Log analysis, incident triage, alert investigation |
 | [Threat Hunting](./Threat-Hunting/) | 2 | Attack chain analysis, lateral movement, MITRE ATT&CK mapping |
 | [Threat Hunting](./Threat-Hunting/) | 1 | Attack chain analysis, Sysmon, MITRE ATT&CK mapping |
 
@@ -28,6 +28,8 @@ malware analysis, and GRC work.
 | 03 | [Boogeyman 1](./SOC-Investigations/Boogeyman-1/writeup.md) | lnkparse, tshark, Wireshark, CyberChef, KeePass | Medium |
 | 04 | [Boogeyman 2](./SOC-Investigations/Boogeyman-2/writeup.md) | Volatility, olevba, md5sum, strings | Medium |
 | 05 | [Vantage](./SOC-Investigations/Vantage/writeup.md)  | Wireshark | Very Easy |
+| 06 | [Telly](./SOC-Investigations/Telly/writeup.md) | Wireshark | Very Easy |
+
 
 ### Threat Hunting
 | # | Name | Tools | Difficulty |
