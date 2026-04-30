@@ -27,7 +27,7 @@ Starting with the full alert queue. I prioritized the high severity alert first,
 
 ### What happened
 
-An alert fired on an inbound email delivered to j.garcia@thetrydaily[.]thm from onboarding@hrconnex.thm. The subject line was "Action Required: Finalize Your Onboarding Profile" and the email contained a link to hxxps://hrconnex[.]thm/onboarding/15400654060/j.garcia. The alert description noted I should check firewall and proxy logs to see if any endpoints attempted to access the URL.
+An alert fired on an inbound email delivered to j.garcia@thetrydaily[.]thm from onboarding@hrconnex[.]thm. The subject line was "Action Required: Finalize Your Onboarding Profile" and the email contained a link to hxxps://hrconnex[.]thm/onboarding/15400654060/j.garcia. The alert description noted I should check firewall and proxy logs to see if any endpoints attempted to access the URL.
 
 ![Alert 8814 details showing the suspicious email](screenshots/01.png)
 
@@ -52,12 +52,12 @@ The alert correctly flagged a suspicious email, but no malicious activity occurr
 | Field | Detail |
 |---|---|
 | Time of Activity | 04/30/2026 06:48:42.630 |
-| Sender | onboarding@hrconnex.thm |
-| Receiver | j.garcia@thetrydaily.thm |
+| Sender | onboarding@hrconnex[.]thm |
+| Receiver | j.garcia@thetrydaily[.]thm |
 | URL | hxxps://hrconnex[.]thm/onboarding/15400654060/j.garcia |
 
 **Reason for False Positive Classification:**
-The alert triggered on an email from onboarding@hrconnex.thm to j.garcia@thetrydaily[.]thm containing a suspicious URL. Upon investigation, no outbound HTTP requests to hrconnex.thm were observed from j.garcia's host during the timeframe of the activity. The email was received but the link was not clicked, confirming no user interaction with the URL occurred.
+The alert triggered on an email from onboarding@hrconnex[.]thm to j.garcia@thetrydaily[.]thm containing a suspicious URL. Upon investigation, no outbound HTTP requests to hrconnex.thm were observed from j.garcia's host during the timeframe of the activity. The email was received but the link was not clicked, confirming no user interaction with the URL occurred.
 
 ---
 
@@ -137,7 +137,7 @@ Hannah Harris attempted to access a shortened URL hxxp://bit[.]ly/3sHkX3da12340 
 
 ### What happened
 
-Another email alert, this time for h.harris@thetrydaily[.]thm. The email came from urgents@amazon.biz with the subject "Your Amazon Package Couldn't Be Delivered - Action Required." This is the source event that connected to Alert 8816.
+Another email alert, this time for h.harris@thetrydaily[.]thm. The email came from urgents@amazon[.]biz with the subject "Your Amazon Package Couldn't Be Delivered - Action Required." This is the source event that connected to Alert 8816.
 
 ![Alert 8815 details showing the Amazon phishing email to h.harris](screenshots/10.png)
 
@@ -161,12 +161,12 @@ The sender domain, amazon.biz, is not affiliated with Amazon. This is a domain i
 | Source IP | 10[.]20[.]2[.]17 |
 
 **Reason for True Positive Classification:**
-Hannah Harris received a phishing email from urgents@amazon.biz at 06:51:55. The sender domain amazon.biz is not affiliated with Amazon and is consistent with a domain impersonation attempt. The email contained a link hxxp://bit[.]ly/3sHkX3da12340 that redirected to hxxps://plixaroo[.]info/, a domain flagged as malicious on VirusTotal. Harris clicked the link, but the connection was blocked by the firewall before any data exchange occurred.
+Hannah Harris received a phishing email from urgents@amazon[.]biz at 06:51:55. The sender domain amazon.biz is not affiliated with Amazon and is consistent with a domain impersonation attempt. The email contained a link hxxp://bit[.]ly/3sHkX3da12340 that redirected to hxxps://plixaroo[.]info/, a domain flagged as malicious on VirusTotal. Harris clicked the link, but the connection was blocked by the firewall before any data exchange occurred.
 
 **Escalation:** Not required. Connection was blocked at the perimeter.
 
 **Recommended Remediation:**
-- Block emails from urgents@amazon.biz at the email gateway
+- Block emails from urgents@amazon[.]biz at the email gateway
 - Block outbound connections to plixaroo.info and 67.199.248.11
 - Notify Hannah Harris about the phishing attempt and advise caution with similar emails
 
@@ -189,7 +189,7 @@ Hannah Harris received a phishing email from urgents@amazon.biz at 06:51:55. The
 
 ### What happened
 
-Another email alert, this time for c.allen@thetrydaily.thm. The email came from no-reply@m1crosoftsupport.co with the subject "Unusual Sign-In Activity on Your Microsoft Account." The sender domain immediately stood out: m1crosoftsupport[.]co uses a "1" instead of an "i" to impersonate Microsoft. Classic typosquatting.
+Another email alert, this time for c.allen@thetrydaily[.]thm. The email came from no-reply@m1crosoftsupport[.]co with the subject "Unusual Sign-In Activity on Your Microsoft Account." The sender domain immediately stood out: m1crosoftsupport[.]co uses a "1" instead of an "i" to impersonate Microsoft. Classic typosquatting.
 
 ![Alert 8817 details showing the Microsoft impersonation phishing email to c.allen](screenshots/12.png)
 
@@ -208,7 +208,7 @@ Unlike the previous alerts where the firewall blocked the attempt, this one went
 | Field | Detail |
 |---|---|
 | Time of Activity | 04/30/2026 06:54:13.630 |
-| Affected User | c.allen@thetrydaily.thm |
+| Affected User | c.allen@thetrydaily[.]thm |
 | Source IP | 10[.]20[.]2[.]25 |
 | Destination IP | 45[.]148[.]10[.]131 |
 | Phishing Link | hxxps://m1crosoftsupport[.]co/login |
@@ -225,7 +225,7 @@ The outbound connection was not blocked. c.allen likely interacted with a creden
 - Investigate c.allen's host for credential harvesting, stolen session tokens, or follow-on malware dropped after the connection
 - Check browser history, running processes, and active network connections on the host
 - Force password reset for c.allen's accounts, especially any Microsoft or M365 credentials
-- Block no-reply@m1crosoftsupport.co at the email gateway and 45.148.10.131 at the firewall
+- Block no-reply@m1crosoftsupport[.]co at the email gateway and 45.148.10.131 at the firewall
 
 **Attack Indicators:**
 

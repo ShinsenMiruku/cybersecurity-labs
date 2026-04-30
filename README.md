@@ -13,6 +13,7 @@ malware analysis, and GRC work.
 | Category | Writeups | Description |
 |---|---|---|
 | [SOC Investigations](./SOC-Investigations/) | 6 | Log analysis, incident triage, alert investigation |
+| [SOC Simulations](./SOC-Simulations/) | 1 | Real alert triage workflows, incident reporting, escalation decisions |
 | [Threat Hunting](./Threat-Hunting/) | 2 | Attack chain analysis, lateral movement, MITRE ATT&CK mapping |
 | [Malware Analysis](./Malware-Analysis/) | 1 | Static analysis, C2 traffic decryption, payload analysis |
 
@@ -30,6 +31,10 @@ malware analysis, and GRC work.
 | 05 | [Vantage](./SOC-Investigations/Vantage/writeup.md)  | Wireshark | Very Easy |
 | 06 | [Telly](./SOC-Investigations/Telly/writeup.md) | Wireshark | Very Easy |
 
+### SOC Simulations
+| # | Name | Platform | Tools | Difficulty |
+|---|---|---|---|---|
+| 01 | [Alert Triage: Phishing](./SOC-Simulations/Alert-Triage-Phishing/writeup.md) | TryHackMe | Splunk, VirusTotal, Cisco Talos | Easy |
 
 ### Threat Hunting
 | # | Name | Tools | Difficulty |
